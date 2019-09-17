@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[github+hexo搭建个人博客]]></title>
+    <url>%2F2019%2F09%2F17%2Fgithub-hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%2F</url>
+    <content type="text"><![CDATA[1.搭建前的准备工作 有一个github的账号 安装了git for windows 安装node.js、npm ​ 这些软件直接安装最新版的就可以。 2.创建仓库​ 在github上创建一个名为username.github.io的仓库，其中username就是你的github上的用户名。当搭建步骤完成之后你就可以直接访问 https://username.github.io 来访问你的博客了。 3.配置SSH key​ 因为提交代码的时候需要拥有github上的权限，因此需要采用ssh key解决本地和服务器之间的连接问题。在git bash（一个在Windows下使用linux命令行的terminal）上先检查本机是否已经存在的ssh key。 1$ cd ~/.ssh ​ 若提示：No such file or directory 说明这是你第一次使用git。 1$ ssh-keygen -t rsa -C &quot;邮件地址&quot; ​ 输入命令后需要三次回车，最终会在你的电脑的用户目录下生成一个文件夹，找到.ssh/id_rsa.pub文件，用记事本打开后复制里面的内容，然后打开你的github主页，进入个人设置中的SSH and GPG keys，在New SSH key中填写一个title，然后将复制的SSH key粘贴到key那里就可以了。 ​ 然后在git bash上： 1$ ssh -T git@github.com ​ 当提示Are you sure you want to continue connecting (yes/no)?，输入yes就会看到Hi username！巴拉巴拉的，说明你已经配置成功了SSH。 ​ 之后还需要再配置一下name和email。 12$ git config --global user.name &quot;username&quot; //这里引号中的是你的github的name$ git config --global user.email &quot;xxx@163.com&quot; //这里引号中是你之前绑定的邮箱 4.使用hexo写博客​ hexo是一个简单、快速、强大的基于Github Pages的博客发布工具，支持Markdown，有许多优秀的插件和主题。 4.1 安装​ 在git bash上： 1$ npm install -g hexo 4.2 创建hexo工作空间​ 在你的磁盘上创建一个hexo文件夹（名字随意），这个文件夹就是将来写博客和存放代码的地方，因此最好选定好位置（我的是f盘上的hexo-github文件夹）。然后在git bash上： 12$ cd /f/hexo-github/$ hexo init ​ hexo会自动下载文件到这个目录中，里面包括了source，theme等文件。然后在git bash上： 12$ hexo g #genereat，这个类似编译生成$ hexo s #server,启动本地服务，开启后可以访问http://localhost:4000，就可以看到博客界面 4.3 修改主题​ 官方的默认主题比较丑，因此可以换一个主题，我选择是hexo-theme-yilia。下载这个主题： 12$ cd /f/hexo-github/$ git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia ​ 主题下载后在themes下，之后修改hexo-github下（不是你下载的主题下）的_config.yml，将里面的theme: landscape 改为 theme: yilia。需要注意这里属性的修改在冒号后面都是有空格的，很多时候达不到你想要的效果就是因为这个原因，查看一下是否忘记空格了。修改完之后直接执行hexo g重新生成。要是还有一些问题，可以先clean一下，使用 hexo clean命令，然后重新生成和发布。 4.4 上传到github​ 之前都是部署在本地，现在需要将自己的博客上传到外网，即github上。首先要进行一些上传前的配置。 ​ 首先安装一个插件： 1$ npm install hexo-deployer-git ​ 然后在hexo-github文件夹下配置_config.yml中有关deploy部分： 1234deploy: type: git repository: git@github.com:liuyu-code/liuyu-code.github.io.git branch: master ​ 之后你就可以使用hexo d将所有有改动的部分提交到github上。 5.常见hexo命令1234567hexo new &quot;postName&quot; #新建文章hexo new page &quot;pageName&quot; #新建页面hexo generate #生成静态页面至public目录hexo server #开启预览访问端口（默认端口4000，&apos;ctrl + c&apos;关闭server）hexo deploy #部署到GitHubhexo help # 查看帮助hexo version #查看Hexo的版本 ​ 缩写： 1234hexo n == hexo new #后者等价于前者hexo g == hexo generatehexo s == hexo serverhexo d == hexo deploy ​ 组合命令： 12hexo s -g #生成并本地预览hexo d -g #生成并上传 6.写博客​ 首先定位到hexo的工作根目录，在git bash中执行命令： 1hexo new &apos;my_first_blog&apos; ​ hexo会在_posts下生成相关md文件，只需要我们打开这个文件就可以开始写博客了，写博客需要掌握一些markdown的基本语法规则，一开始我采用的Notepad++这个软件来写的，后来发现一个更好用的博客编辑工具Typora，相比记事本来说，实在是鸟枪换炮了，这个软件真的好用，强烈推荐。]]></content>
+      <tags>
+        <tag>hexo</tag>
+        <tag>github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[coder]]></title>
+    <url>%2F2019%2F09%2F12%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[hello world]]></content>
+      <tags>
+        <tag>hello world</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[my-first-blog]]></title>
+    <url>%2F2019%2F09%2F12%2Fmy-first-blog%2F</url>
+    <content type="text"><![CDATA[前言使用github pages服务搭建博客的好处有： 全是静态文件，访问速度快； 免费方便，不用花一分钱就可以搭建一个自由的个人博客，不需要服务器不需要后台； 可以随意绑定自己的域名，不仔细看的话根本看不出来你的网站是基于github的； 数据绝对安全，基于github的版本管理，想恢复到哪个历史版本都行； 博客内容可以轻松打包、转移、发布到其它平台； 等等； 这是加粗的文字这是倾斜的文字这是斜体加粗的文字 第一项： 第一项嵌套的第一个元素 第一项嵌套的第二个元素 第二项： 第二项嵌套的第一个元素 第二项嵌套的第一个元素 第三项： ​ x ​ y first： x y second： z w 这是加粗的文字这是倾斜的文字这是倾斜的文字 表头 表头 单元格 单元格 单元格 单元格 左对齐 右对齐 居中对齐 单元格 单元格 单元格 单元格 单元格 单元格 12345678#include&lt;iostream&gt;using namespace std;int main()&#123; cout&lt;&lt;"hello world"&lt;&lt;endl; return 0;&#125; 简书百度 这个链接用 1 作为网址变量 RUNOOB.然后在文档的结尾位变量赋值（网址）]]></content>
+      <tags>
+        <tag>github pages</tag>
+      </tags>
+  </entry>
+</search>
