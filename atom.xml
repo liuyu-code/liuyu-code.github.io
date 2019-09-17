@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>HUST</title>
+  
+  <subtitle>One huster</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2019-09-17T09:49:49.274Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>lifisher</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>github+hexo搭建个人博客</title>
+    <link href="http://yoursite.com/2019/09/17/github-hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://yoursite.com/2019/09/17/github-hexo搭建个人博客/</id>
+    <published>2019-09-17T01:37:59.000Z</published>
+    <updated>2019-09-17T09:49:49.274Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;1-搭建前的准备工作&quot;&gt;&lt;a href=&quot;#1-搭建前的准备工作&quot; class=&quot;headerlink&quot; title=&quot;1.搭建前的准备工作&quot;&gt;&lt;/a&gt;1.搭建前的准备工作&lt;/h2&gt;&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;有一个github的账号&lt;/li&gt;
+&lt;li&gt;安装了git for windows&lt;/li&gt;
+&lt;li&gt;安装node.js、npm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;​        这些软件直接安装最新版的就可以。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="github hexo" scheme="http://yoursite.com/categories/github-hexo/"/>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+      <category term="github" scheme="http://yoursite.com/tags/github/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>coder</title>
+    <link href="http://yoursite.com/2019/09/12/hello-world/"/>
+    <id>http://yoursite.com/2019/09/12/hello-world/</id>
+    <published>2019-09-12T08:17:38.000Z</published>
+    <updated>2019-09-17T01:50:17.215Z</updated>
+    
+    <summary type="html">
+    
+      这是文章的摘要，字数保持在140字以内
+    
+    </summary>
+    
+    
+    
+      <category term="hello world" scheme="http://yoursite.com/tags/hello-world/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>my-first-blog</title>
+    <link href="http://yoursite.com/2019/09/12/my-first-blog/"/>
+    <id>http://yoursite.com/2019/09/12/my-first-blog/</id>
+    <published>2019-09-12T08:17:38.000Z</published>
+    <updated>2019-09-16T08:53:01.919Z</updated>
+    
+    <summary type="html">
+    
+      这是文章的摘要，字数保持在140字以内
+    
+    </summary>
+    
+    
+    
+      <category term="github pages" scheme="http://yoursite.com/tags/github-pages/"/>
+    
+  </entry>
+  
+</feed>
