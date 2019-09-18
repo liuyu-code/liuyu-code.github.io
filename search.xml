@@ -13,17 +13,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[coder]]></title>
-    <url>%2F2019%2F09%2F12%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[hello world]]></content>
-      <tags>
-        <tag>hello world</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[my-first-blog]]></title>
     <url>%2F2019%2F09%2F12%2Fmy-first-blog%2F</url>
-    <content type="text"><![CDATA[test前言使用github pages服务搭建博客的好处有： 全是静态文件，访问速度快； 免费方便，不用花一分钱就可以搭建一个自由的个人博客，不需要服务器不需要后台； 可以随意绑定自己的域名，不仔细看的话根本看不出来你的网站是基于github的； 数据绝对安全，基于github的版本管理，想恢复到哪个历史版本都行； 博客内容可以轻松打包、转移、发布到其它平台； 等等； 这是加粗的文字这是倾斜的文字这是斜体加粗的文字 第一项： 第一项嵌套的第一个元素 第一项嵌套的第二个元素 第二项： 第二项嵌套的第一个元素 第二项嵌套的第一个元素 第三项： ​ x ​ y first： x y second： z w 这是加粗的文字这是倾斜的文字这是倾斜的文字 表头 表头 单元格 单元格 单元格 单元格 左对齐 右对齐 居中对齐 单元格 单元格 单元格 单元格 单元格 单元格 12345678#include&lt;iostream&gt;using namespace std;int main()&#123; cout&lt;&lt;"hello world"&lt;&lt;endl; return 0;&#125; 简书百度 这个链接用 1 作为网址变量 RUNOOB.然后在文档的结尾位变量赋值（网址）]]></content>
+    <content type="text"><![CDATA[github搭建博客的好处介绍使用github pages服务搭建博客的好处有： 全是静态文件，访问速度快； 免费方便，不用花一分钱就可以搭建一个自由的个人博客，不需要服务器不需要后台； 可以随意绑定自己的域名，不仔细看的话根本看不出来你的网站是基于github的； 数据绝对安全，基于github的版本管理，想恢复到哪个历史版本都行； 博客内容可以轻松打包、转移、发布到其它平台； 等等；]]></content>
       <tags>
         <tag>github pages</tag>
       </tags>
