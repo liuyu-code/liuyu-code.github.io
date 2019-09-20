@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-09-20T10:28:31.066Z</updated>
+  <updated>2019-09-20T10:04:36.718Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,21 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>github+hexo个人博客搭建next主题插件总结</title>
-    <link href="http://yoursite.com/2019/09/20/github-hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BAnext%E4%B8%BB%E9%A2%98%E6%8F%92%E4%BB%B6%E6%80%BB%E7%BB%93/"/>
-    <id>http://yoursite.com/2019/09/20/github-hexo个人博客搭建next主题插件总结/</id>
-    <published>2019-09-20T10:28:31.000Z</published>
-    <updated>2019-09-20T10:28:31.066Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-    
-  </entry>
   
   <entry>
     <title>链表问题总结（相交、成环）</title>
@@ -83,6 +68,27 @@
   </entry>
   
   <entry>
+    <title>github+hexo个人博客搭建之next主题插件总结</title>
+    <link href="http://yoursite.com/2019/09/18/github-hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BAnext%E4%B8%BB%E9%A2%98%E6%8F%92%E4%BB%B6%E6%80%BB%E7%BB%93/"/>
+    <id>http://yoursite.com/2019/09/18/github-hexo博客搭建next主题插件总结/</id>
+    <published>2019-09-18T10:28:31.000Z</published>
+    <updated>2019-09-20T10:50:28.164Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;​        前言：在完成博客搭建之后，之前使用的github+hexo的一套采用的是yilla主题，但之后在网上查阅后发现其实next主题更加符合我的口味，而且它是一款国人开发的针对中国的github博客主题，并且拥有很多第三方插件的接口，在这里我把我当时参考更换主题和引入第三方插件的网站做一个统计分享。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="github博客搭建" scheme="http://yoursite.com/categories/github%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
     <title>github+hexo搭建个人博客</title>
     <link href="http://yoursite.com/2019/09/17/github-hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>http://yoursite.com/2019/09/17/github-hexo搭建个人博客/</id>
@@ -115,7 +121,7 @@
     <link href="http://yoursite.com/2019/09/12/my-first-blog/"/>
     <id>http://yoursite.com/2019/09/12/my-first-blog/</id>
     <published>2019-09-12T08:17:38.000Z</published>
-    <updated>2019-09-18T10:30:34.790Z</updated>
+    <updated>2019-09-20T10:52:39.984Z</updated>
     
     <summary type="html">
     
