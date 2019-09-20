@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-09-17T10:05:36.315Z</updated>
+  <updated>2019-09-20T04:35:31.491Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,21 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MachineLearning入门笔记（吴恩达）</title>
+    <link href="http://yoursite.com/2019/09/20/MachineLearning%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0%EF%BC%88%E5%90%B4%E6%81%A9%E8%BE%BE%EF%BC%89/"/>
+    <id>http://yoursite.com/2019/09/20/MachineLearning入门笔记（吴恩达）/</id>
+    <published>2019-09-20T04:35:31.000Z</published>
+    <updated>2019-09-20T04:35:31.491Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>github+hexo搭建个人博客</title>
