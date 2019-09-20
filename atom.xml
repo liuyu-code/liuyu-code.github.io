@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-09-20T10:04:36.718Z</updated>
+  <updated>2019-09-20T10:28:31.066Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,21 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>github+hexo个人博客搭建next主题插件总结</title>
+    <link href="http://yoursite.com/2019/09/20/github-hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BAnext%E4%B8%BB%E9%A2%98%E6%8F%92%E4%BB%B6%E6%80%BB%E7%BB%93/"/>
+    <id>http://yoursite.com/2019/09/20/github-hexo个人博客搭建next主题插件总结/</id>
+    <published>2019-09-20T10:28:31.000Z</published>
+    <updated>2019-09-20T10:28:31.066Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>链表问题总结（相交、成环）</title>
@@ -72,7 +87,7 @@
     <link href="http://yoursite.com/2019/09/17/github-hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>http://yoursite.com/2019/09/17/github-hexo搭建个人博客/</id>
     <published>2019-09-17T01:37:59.000Z</published>
-    <updated>2019-09-17T10:05:36.315Z</updated>
+    <updated>2019-09-20T10:30:25.036Z</updated>
     
     <summary type="html">
     
@@ -88,12 +103,10 @@
     </summary>
     
     
-      <category term="github hexo" scheme="http://yoursite.com/categories/github-hexo/"/>
+      <category term="github博客搭建" scheme="http://yoursite.com/categories/github%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     
     
       <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
-    
-      <category term="github" scheme="http://yoursite.com/tags/github/"/>
     
   </entry>
   
