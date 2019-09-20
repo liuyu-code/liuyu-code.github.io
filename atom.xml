@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-09-20T04:35:31.491Z</updated>
+  <updated>2019-09-20T05:18:06.554Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,17 +17,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>MachineLearning入门笔记（吴恩达）</title>
-    <link href="http://yoursite.com/2019/09/20/MachineLearning%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0%EF%BC%88%E5%90%B4%E6%81%A9%E8%BE%BE%EF%BC%89/"/>
-    <id>http://yoursite.com/2019/09/20/MachineLearning入门笔记（吴恩达）/</id>
+    <title>Machine Learning入门笔记1（吴恩达）</title>
+    <link href="http://yoursite.com/2019/09/20/MachineLearning%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01%EF%BC%88%E5%90%B4%E6%81%A9%E8%BE%BE%EF%BC%89/"/>
+    <id>http://yoursite.com/2019/09/20/MachineLearning入门笔记1（吴恩达）/</id>
     <published>2019-09-20T04:35:31.000Z</published>
-    <updated>2019-09-20T04:35:31.491Z</updated>
+    <updated>2019-09-20T05:18:06.554Z</updated>
     
     <summary type="html">
+    
+      &lt;h2 id=&quot;1-机器学习算法分类&quot;&gt;&lt;a href=&quot;#1-机器学习算法分类&quot; class=&quot;headerlink&quot; title=&quot;1.机器学习算法分类&quot;&gt;&lt;/a&gt;1.机器学习算法分类&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;supervised learning（监督学习）&lt;ul&gt;
+&lt;li&gt;classification problem（分类问题）&lt;/li&gt;
+&lt;li&gt;regression problem（回归问题）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;unsupervised learning（无监督学习）（clustering algorithm，聚类）
     
     </summary>
     
     
+      <category term="Machine Learning" scheme="http://yoursite.com/categories/Machine-Learning/"/>
+    
+    
+      <category term="Machine Learning" scheme="http://yoursite.com/tags/Machine-Learning/"/>
+    
+      <category term="吴恩达" scheme="http://yoursite.com/tags/%E5%90%B4%E6%81%A9%E8%BE%BE/"/>
     
   </entry>
   

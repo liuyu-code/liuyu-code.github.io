@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[MachineLearning入门笔记（吴恩达）]]></title>
-    <url>%2F2019%2F09%2F20%2FMachineLearning%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0%EF%BC%88%E5%90%B4%E6%81%A9%E8%BE%BE%EF%BC%89%2F</url>
-    <content type="text"></content>
+    <title><![CDATA[Machine Learning入门笔记1（吴恩达）]]></title>
+    <url>%2F2019%2F09%2F20%2FMachineLearning%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01%EF%BC%88%E5%90%B4%E6%81%A9%E8%BE%BE%EF%BC%89%2F</url>
+    <content type="text"><![CDATA[1.机器学习算法分类 supervised learning（监督学习） classification problem（分类问题） regression problem（回归问题） unsupervised learning（无监督学习）（clustering algorithm，聚类） 2.supervised learning中的regression problem流程：​ 监督学习首先会有一个原始的训练集Training Set，之后通过你的学习算法Learning Algorithm得到一个预测函数h(x), 这个预测函数可以通过input数据得到一个estimated output。 3.regression problem中的代价函数cost function最小化求解参数：​ 其实这就是一个优化问题，最简单的模型就是线性拟合，和我们初高中学的最小二乘法拟合直线的思想差不多。目的是通过坐标系上一系列已知的点拟合出一条最佳直线，这个直线y=ax+b中的a和b其实就是你需要求解的目标。当你有多个因素影响的时候，方程可能就是y=a0+a1x1+a2x2+…+amxm。这里向量（a0,a1,a2,…am）其实就是在回归问题中需要求解的目标，使得这个线性方程能够最好的拟合这些已知的点，然后利用这个求得的方程去预测之后的结果。 3.1 两种求解参数的方法：梯度下降法求解参数的递推公式如下，$$\theta_j :=\theta_j-\alpha\frac{1}{m}\sum_{i=1}^{m}(h_\theta(x^(i)-y^(i)x_j^(i) （\theta_j代表从0更新到n）$$​ 在实际应用中可以采用特征缩放（feature scaling）对x_i进行处理可以让梯度下降的更快，也可以采用均值归一化进行特征处理。 正规方程组求解参数（可以一步得到）：$$\theta=(X^TX)^-1 X^Ty$$​ 正规方程组求解可以不进行特征缩放。 3.2梯度下降法和正规方程组求解方法的区别梯度下降法（Gradient descent）：需要选择一个相对最佳的下降率alpha；需要多次迭代；但可以在特征向量很多的时候工作的很好，适用于多特征的问题。 正规方程组方法(Normal equation)：不需要选择下降率，也不需要迭代，只需要计算一个矩阵的转置和矩阵相乘的逆，时间复杂度大概是O(n^3)，当特征数量太大之后计算特别慢，适合处理小特征的问题。]]></content>
+      <categories>
+        <category>Machine Learning</category>
+      </categories>
+      <tags>
+        <tag>Machine Learning</tag>
+        <tag>吴恩达</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[github+hexo搭建个人博客]]></title>
