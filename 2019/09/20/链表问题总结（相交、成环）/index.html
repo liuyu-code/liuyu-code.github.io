@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="数据结构，链表,">
 
 
 
@@ -81,17 +81,20 @@
 
 
 
-<meta name="description" content="独立有思想，温柔有力量">
-<meta name="keywords" content="Coder">
-<meta property="og:type" content="website">
-<meta property="og:title" content="远方">
-<meta property="og:url" content="http://yoursite.com/archives/2019/index.html">
+<meta name="description" content="1.求链表倒数第K个节点（单向链表）？​        思路：采用双指针法。P1指向表头，P2指向P1相隔K的节点，同时向后移动，当P2到达表尾(P2-&amp;gt;next=null), P1即倒数第K个节点。 2.判断链表是否有环？​        首先循环链表是带环链表的一种特殊情况。">
+<meta name="keywords" content="数据结构，链表">
+<meta property="og:type" content="article">
+<meta property="og:title" content="链表问题总结（相交、成环）">
+<meta property="og:url" content="http://yoursite.com/2019/09/20/链表问题总结（相交、成环）/index.html">
 <meta property="og:site_name" content="远方">
-<meta property="og:description" content="独立有思想，温柔有力量">
+<meta property="og:description" content="1.求链表倒数第K个节点（单向链表）？​        思路：采用双指针法。P1指向表头，P2指向P1相隔K的节点，同时向后移动，当P2到达表尾(P2-&amp;gt;next=null), P1即倒数第K个节点。 2.判断链表是否有环？​        首先循环链表是带环链表的一种特殊情况。">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://t1.picb.cc/uploads/2019/09/20/gPOm4W.png">
+<meta property="og:updated_time" content="2019-09-20T10:00:30.844Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="远方">
-<meta name="twitter:description" content="独立有思想，温柔有力量">
+<meta name="twitter:title" content="链表问题总结（相交、成环）">
+<meta name="twitter:description" content="1.求链表倒数第K个节点（单向链表）？​        思路：采用双指针法。P1指向表头，P2指向P1相隔K的节点，同时向后移动，当P2到达表尾(P2-&amp;gt;next=null), P1即倒数第K个节点。 2.判断链表是否有环？​        首先循环链表是带环链表的一种特殊情况。">
+<meta name="twitter:image" content="https://t1.picb.cc/uploads/2019/09/20/gPOm4W.png">
 
 
 
@@ -121,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/2019/">
+  <link rel="canonical" href="http://yoursite.com/2019/09/20/链表问题总结（相交、成环）/">
 
 
 
 
 
-  <title>归档 | 远方</title>
+  <title>链表问题总结（相交、成环） | 远方</title>
   
 
 
@@ -156,7 +159,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -292,177 +295,221 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/20/链表问题总结（相交、成环）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="lifisher">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/uploads/pic.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="远方">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">链表问题总结（相交、成环）</h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-20T17:11:36+08:00">
+                2019-09-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-        嗯..! 目前共计 4 篇日志。 继续努力。
-      </span>
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/数据结构/" itemprop="url" rel="index">
+                    <span itemprop="name">数据结构</span>
+                  </a>
+                </span>
 
-      
-
-        
-        
-        
-
-        
+                
+                
+              
+            </span>
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2019">2019</h1>
-          </div>
-        
-        
 
-        
+          
+            
+          
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
+          
+             <span id="/2019/09/20/链表问题总结（相交、成环）/" class="leancloud_visitors" data-flag-title="链表问题总结（相交、成环）">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/09/20/链表问题总结（相交、成环）/" itemprop="url">
+          
+
+          
+            <div class="post-wordcount">
               
-                <span itemprop="name">链表问题总结（相交、成环）</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  659字
+                </span>
               
-            </a>
-        
-      </h2>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-09-20T17:11:36+08:00" content="2019-09-20">
-          09-20
-        </time>
-      </div>
+              
+                <span class="post-meta-divider">|</span>
+              
 
-    </header>
-  </article>
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  2分钟
+                </span>
+              
+            </div>
+          
 
+          
 
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/09/20/MachineLearning入门笔记1（吴恩达）/" itemprop="url">
-              
-                <span itemprop="name">Machine Learning入门笔记1（吴恩达）</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-09-20T12:35:31+08:00" content="2019-09-20">
-          09-20
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
+      
+        <h2 id="1-求链表倒数第K个节点（单向链表）？"><a href="#1-求链表倒数第K个节点（单向链表）？" class="headerlink" title="1.求链表倒数第K个节点（单向链表）？"></a>1.求链表倒数第K个节点（单向链表）？</h2><p>​        思路：采用双指针法。P1指向表头，P2指向P1相隔K的节点，同时向后移动，当P2到达表尾(P2-&gt;next=null), P1即倒数第K个节点。</p>
+<h2 id="2-判断链表是否有环？"><a href="#2-判断链表是否有环？" class="headerlink" title="2.判断链表是否有环？"></a>2.判断链表是否有环？</h2><p>​        首先循环链表是带环链表的一种特殊情况。</p>
+<a id="more"></a>
 
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/09/17/github-hexo搭建个人博客/" itemprop="url">
-              
-                <span itemprop="name">github+hexo搭建个人博客</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-09-17T09:37:59+08:00" content="2019-09-17">
-          09-17
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+<p>​        思想：类似于生活中跑步追赶的问题。两个人从相同起点出发，其中一个人的速度比另外一个人快，结果经过一段时间后，速度快的人会追上速度慢的人，此时速度快的人比慢的人多跑了一圈，这样就证明存在了环。</p>
+<p>​        方法：两个指针P1和P2，从链表的起点开始，P1一次移动一个步长，P2一次移动2个步长，若两个指针相等（并且不等于null），则P2绕了n圈之后追上了P1，则链表存在环。</p>
+<h2 id="3-判断两个链表是否存在交点？"><a href="#3-判断两个链表是否存在交点？" class="headerlink" title="3.判断两个链表是否存在交点？"></a>3.判断两个链表是否存在交点？</h2><p>​        思想：若L1、L2都无环，直接遍历L1和L2，找到他们的尾节点，若尾节点相同，则必定相交。时间复杂度O（m+n），空间复杂度O（1）。若一个链表有环，一个链表无环，则必不可能相交。若两个都有环，遍历L1环上的每一个节点是否和L2环上的某个节点相等。</p>
+<h2 id="4-一个链表成环，环的入口在哪里？"><a href="#4-一个链表成环，环的入口在哪里？" class="headerlink" title="4.一个链表成环，环的入口在哪里？"></a>4.一个链表成环，环的入口在哪里？</h2><p>​        设A为起点，B为入口，C为第一次相遇点。且AB=a，BC=x，链表长度为L，环的一圈长度为r。假设相遇时，fast节点走了2s，slow节点走了s。则有</p>
+<p>​<br>$$<br>s+nr=2s\则有 \ s=nr\而a+x=s,r=L-a\则有a+x=(n-1)r+r=(n-1)r+L-a\则a=(n-1)r+L-a-x。<br>$$<br>​        而L-a-x为CB的长度（不是BC），则有从链表头A到环入口B等于（n-1）次循环内环加上相遇点到环入口的距离CB，则可让slow节点从A出发，fast节点从C出发。当两者再次相遇的时候就是入口B。（这里可能比较绕，建议大家自己在草稿纸上画一下，就很明显了）</p>
+<p><img src="https://t1.picb.cc/uploads/2019/09/20/gPOm4W.png" alt="pic"></p>
+<h2 id="5-如何求单链表中环的长度？"><a href="#5-如何求单链表中环的长度？" class="headerlink" title="5.如何求单链表中环的长度？"></a>5.如何求单链表中环的长度？</h2><p>​        思路：仍然采用双指针，一个指针速度为2，一个指针速度为1，则第一次相遇的时候存在：<br>$$<br>2t_1-t_1=kr<br>$$<br>​        第二次相遇的时候有：<br>$$<br>2t_2-t_2=(k+1)r<br>$$<br>​        两式相减有：<br>$$<br>t_2-t_1=r<br>$$<br>​        因此只需要记录第一次相遇时前进的步数t1和第二次相遇前进的步数t2,即可求出环的长度。</p>
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/09/12/my-first-blog/" itemprop="url">
-              
-                <span itemprop="name">my-first-blog</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-09-12T16:17:38+08:00" content="2019-09-12">
-          09-12
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/数据结构，链表/" rel="tag"># 数据结构，链表</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/09/20/MachineLearning入门笔记1（吴恩达）/" rel="next" title="Machine Learning入门笔记1（吴恩达）">
+                <i class="fa fa-chevron-left"></i> Machine Learning入门笔记1（吴恩达）
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -470,6 +517,15 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80NjY3Mi8yMzE4Mg=="></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -490,8 +546,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -582,6 +647,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-求链表倒数第K个节点（单向链表）？"><span class="nav-text">1.求链表倒数第K个节点（单向链表）？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-判断链表是否有环？"><span class="nav-text">2.判断链表是否有环？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-判断两个链表是否存在交点？"><span class="nav-text">3.判断两个链表是否存在交点？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-一个链表成环，环的入口在哪里？"><span class="nav-text">4.一个链表成环，环的入口在哪里？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-如何求单链表中环的长度？"><span class="nav-text">5.如何求单链表中环的长度？</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -731,6 +812,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -759,6 +844,17 @@
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 

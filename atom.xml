@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-09-20T05:18:06.554Z</updated>
+  <updated>2019-09-20T10:00:30.844Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>链表问题总结（相交、成环）</title>
+    <link href="http://yoursite.com/2019/09/20/%E9%93%BE%E8%A1%A8%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93%EF%BC%88%E7%9B%B8%E4%BA%A4%E3%80%81%E6%88%90%E7%8E%AF%EF%BC%89/"/>
+    <id>http://yoursite.com/2019/09/20/链表问题总结（相交、成环）/</id>
+    <published>2019-09-20T09:11:36.000Z</published>
+    <updated>2019-09-20T10:00:30.844Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;1-求链表倒数第K个节点（单向链表）？&quot;&gt;&lt;a href=&quot;#1-求链表倒数第K个节点（单向链表）？&quot; class=&quot;headerlink&quot; title=&quot;1.求链表倒数第K个节点（单向链表）？&quot;&gt;&lt;/a&gt;1.求链表倒数第K个节点（单向链表）？&lt;/h2&gt;&lt;p&gt;​        思路：采用双指针法。P1指向表头，P2指向P1相隔K的节点，同时向后移动，当P2到达表尾(P2-&amp;gt;next=null), P1即倒数第K个节点。&lt;/p&gt;
+&lt;h2 id=&quot;2-判断链表是否有环？&quot;&gt;&lt;a href=&quot;#2-判断链表是否有环？&quot; class=&quot;headerlink&quot; title=&quot;2.判断链表是否有环？&quot;&gt;&lt;/a&gt;2.判断链表是否有环？&lt;/h2&gt;&lt;p&gt;​        首先循环链表是带环链表的一种特殊情况。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="数据结构" scheme="http://yoursite.com/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    
+      <category term="数据结构，链表" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%8C%E9%93%BE%E8%A1%A8/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Machine Learning入门笔记1（吴恩达）</title>
     <link href="http://yoursite.com/2019/09/20/MachineLearning%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01%EF%BC%88%E5%90%B4%E6%81%A9%E8%BE%BE%EF%BC%89/"/>
     <id>http://yoursite.com/2019/09/20/MachineLearning入门笔记1（吴恩达）/</id>
     <published>2019-09-20T04:35:31.000Z</published>
-    <updated>2019-09-20T05:18:06.554Z</updated>
+    <updated>2019-09-20T09:30:52.671Z</updated>
     
     <summary type="html">
     
