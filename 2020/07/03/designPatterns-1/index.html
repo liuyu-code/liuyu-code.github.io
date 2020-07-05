@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="hexo,">
+  <meta name="keywords" content="设计模式,单例模式,">
 
 
 
@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="​        前言：在完成博客搭建之后，之前使用的github+hexo的一套采用的是yilla主题，但之后在网上查阅后发现其实next主题更加符合我的口味，而且它是一款国人开发的针对中国的github博客主题，并且拥有很多第三方插件的接口，在这里我把我当时参考更换主题和引入第三方插件的网站做一个统计分享。">
-<meta name="keywords" content="hexo">
+<meta name="description" content="单例模式1.单例模式属于创建型模式。确保一个类只有单个对象被创建，这个类提供了一种访问其唯一对象的方式，可以直接访问，不需要实例化该类的对象。 注意：  1.单例类只能有一个实例； 2.单例类必须自己创建自己唯一的实例； 3.单例类必须给所有其他对象提供这一个实例。  2.使用条件：当想控制实例的数目的时候。比如一个班只有一个班主任，再比如Windows操作文件的时候必须是唯一实例。 3.优点：在">
+<meta name="keywords" content="设计模式,单例模式">
 <meta property="og:type" content="article">
-<meta property="og:title" content="github+hexo个人博客搭建之next主题插件总结">
-<meta property="og:url" content="http://yoursite.com/2019/09/18/github-hexo博客搭建next主题插件总结/index.html">
+<meta property="og:title" content="单例模式">
+<meta property="og:url" content="http://yoursite.com/2020/07/03/designPatterns-1/index.html">
 <meta property="og:site_name" content="远方">
-<meta property="og:description" content="​        前言：在完成博客搭建之后，之前使用的github+hexo的一套采用的是yilla主题，但之后在网上查阅后发现其实next主题更加符合我的口味，而且它是一款国人开发的针对中国的github博客主题，并且拥有很多第三方插件的接口，在这里我把我当时参考更换主题和引入第三方插件的网站做一个统计分享。">
+<meta property="og:description" content="单例模式1.单例模式属于创建型模式。确保一个类只有单个对象被创建，这个类提供了一种访问其唯一对象的方式，可以直接访问，不需要实例化该类的对象。 注意：  1.单例类只能有一个实例； 2.单例类必须自己创建自己唯一的实例； 3.单例类必须给所有其他对象提供这一个实例。  2.使用条件：当想控制实例的数目的时候。比如一个班只有一个班主任，再比如Windows操作文件的时候必须是唯一实例。 3.优点：在">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-20T10:50:28.164Z">
+<meta property="og:updated_time" content="2020-07-04T10:05:47.136Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="github+hexo个人博客搭建之next主题插件总结">
-<meta name="twitter:description" content="​        前言：在完成博客搭建之后，之前使用的github+hexo的一套采用的是yilla主题，但之后在网上查阅后发现其实next主题更加符合我的口味，而且它是一款国人开发的针对中国的github博客主题，并且拥有很多第三方插件的接口，在这里我把我当时参考更换主题和引入第三方插件的网站做一个统计分享。">
+<meta name="twitter:title" content="单例模式">
+<meta name="twitter:description" content="单例模式1.单例模式属于创建型模式。确保一个类只有单个对象被创建，这个类提供了一种访问其唯一对象的方式，可以直接访问，不需要实例化该类的对象。 注意：  1.单例类只能有一个实例； 2.单例类必须自己创建自己唯一的实例； 3.单例类必须给所有其他对象提供这一个实例。  2.使用条件：当想控制实例的数目的时候。比如一个班只有一个班主任，再比如Windows操作文件的时候必须是唯一实例。 3.优点：在">
 
 
 
@@ -122,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/09/18/github-hexo博客搭建next主题插件总结/">
+  <link rel="canonical" href="http://yoursite.com/2020/07/03/designPatterns-1/">
 
 
 
 
 
-  <title>github+hexo个人博客搭建之next主题插件总结 | 远方</title>
+  <title>单例模式 | 远方</title>
   
 
 
@@ -307,7 +307,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/18/github-hexo博客搭建next主题插件总结/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/03/designPatterns-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="lifisher">
@@ -324,7 +324,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">github+hexo个人博客搭建之next主题插件总结</h1>
+          <h1 class="post-title" itemprop="name headline">单例模式</h1>
         
 
         <div class="post-meta">
@@ -336,8 +336,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-18T18:28:31+08:00">
-                2019-09-18
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-07-03T20:25:27+08:00">
+                2020-07-03
               </time>
             
 
@@ -359,8 +359,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/github博客搭建/" itemprop="url" rel="index">
-                    <span itemprop="name">github博客搭建</span>
+                  <a href="/categories/设计模式/" itemprop="url" rel="index">
+                    <span itemprop="name">设计模式</span>
                   </a>
                 </span>
 
@@ -376,7 +376,7 @@
 
           
           
-             <span id="/2019/09/18/github-hexo博客搭建next主题插件总结/" class="leancloud_visitors" data-flag-title="github+hexo个人博客搭建之next主题插件总结">
+             <span id="/2020/07/03/designPatterns-1/" class="leancloud_visitors" data-flag-title="单例模式">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -401,7 +401,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  355字
+                  736字
                 </span>
               
 
@@ -417,7 +417,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1分钟
+                  3分钟
                 </span>
               
             </div>
@@ -438,19 +438,88 @@
       
 
       
-        <p>​        前言：在完成博客搭建之后，之前使用的github+hexo的一套采用的是yilla主题，但之后在网上查阅后发现其实next主题更加符合我的口味，而且它是一款国人开发的针对中国的github博客主题，并且拥有很多第三方插件的接口，在这里我把我当时参考更换主题和引入第三方插件的网站做一个统计分享。</p>
-<a id="more"></a>
+        <h1 id="单例模式"><a href="#单例模式" class="headerlink" title="单例模式"></a>单例模式</h1><p>1.单例模式属于创建型模式。确保一个类只有单个对象被创建，这个类提供了一种访问其唯一对象的方式，可以直接访问，不需要实例化该类的对象。</p>
+<p>注意：</p>
+<ul>
+<li>1.单例类只能有一个实例；</li>
+<li>2.单例类必须自己创建自己唯一的实例；</li>
+<li>3.单例类必须给所有其他对象提供这一个实例。</li>
+</ul>
+<p>2.使用条件：当想控制实例的数目的时候。比如一个班只有一个班主任，再比如Windows操作文件的时候必须是唯一实例。</p>
+<p>3.优点：在内存只有一个实例，避免了内存的开销（频繁创建和销毁实例）</p>
+<p>4.缺点：没有借口，不可继承。</p>
+<p>5.关键思想：构造函数私有。</p>
+<h3 id="实现方法："><a href="#实现方法：" class="headerlink" title="实现方法："></a>实现方法：</h3><h5 id="1-懒汉式，线程不安全。"><a href="#1-懒汉式，线程不安全。" class="headerlink" title="1.懒汉式，线程不安全。"></a>1.懒汉式，线程不安全。</h5><p>描述：不支持多线程。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SingleObject</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> SingleObject object;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">SingleObject</span><span class="params">()</span></span>&#123;&#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> SingleObject <span class="title">getObject</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(object==<span class="keyword">null</span>)</span><br><span class="line">            object=<span class="keyword">new</span> SingleObject();</span><br><span class="line">        <span class="keyword">return</span> object;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p><strong>1.这个是next主题下载安装使用的官方操作：</strong></p>
-<p><a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">http://theme-next.iissnan.com/getting-started.html</a></p>
-<p><strong>2.这个是Next主题的官方使用文档，里面详细介绍了第三方服务的集成。</strong></p>
-<p><a href="http://theme-next.iissnan.com/third-party-services.html#algolia-search" target="_blank" rel="noopener">http://theme-next.iissnan.com/third-party-services.html#algolia-search</a></p>
-<p><strong>3.这个网站是next官方推荐的为Next主题添加文章阅读量统计功能的博客。</strong></p>
-<p><a href="https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html#配置LeanCloud" target="_blank" rel="noopener">https://notes.doublemine.me/2015-10-21-%E4%B8%BANexT%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E9%98%85%E8%AF%BB%E9%87%8F%E7%BB%9F%E8%AE%A1%E5%8A%9F%E8%83%BD.html#%E9%85%8D%E7%BD%AELeanCloud</a></p>
-<p><strong>4.这个是hexo中Next主题的详细配置。</strong></p>
-<p><a href="https://www.jianshu.com/p/3a05351a37dc" target="_blank" rel="noopener">https://www.jianshu.com/p/3a05351a37dc</a></p>
-<hr>
-<p>​        访问量的统计我采用的是leancloud，评论系统采用的是来必力的。此外推荐一个免费使用的图床网站<a href="https://www.picb.cc/，还不太清楚有没有限制，但暂时使用我没有发现任何问题。" target="_blank" rel="noopener">https://www.picb.cc/，还不太清楚有没有限制，但暂时使用我没有发现任何问题。</a></p>
+<h5 id="2-懒汉式，线程安全。"><a href="#2-懒汉式，线程安全。" class="headerlink" title="2.懒汉式，线程安全。"></a>2.懒汉式，线程安全。</h5><p>描述：采用<strong>synchronize</strong>加锁保证单例，支持多线程。加锁影响效率</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SingleObject</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> SingleObject object;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">SingleObject</span><span class="params">()</span></span>&#123;&#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> synchronize SingleObject <span class="title">getObject</span><span class="params">()</span></span>&#123;  <span class="comment">//采用synchronize</span></span><br><span class="line">        <span class="keyword">if</span>(object==<span class="keyword">null</span>)</span><br><span class="line">            object=<span class="keyword">new</span> SingleObject();</span><br><span class="line">        <span class="keyword">return</span> object;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="3-饿汉式，线程安全。"><a href="#3-饿汉式，线程安全。" class="headerlink" title="3.饿汉式，线程安全。"></a>3.饿汉式，线程安全。</h5><p>描述：不用加锁，但类加载时就初始化，会浪费内存。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SingleObject</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> SingleObject object=<span class="keyword">new</span> SingleObject();<span class="comment">//和懒汉式区别</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">SingleObject</span><span class="params">()</span></span>&#123;&#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> SingleObject <span class="title">getObject</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> object;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="4-双重校验锁，线程安全"><a href="#4-双重校验锁，线程安全" class="headerlink" title="4.双重校验锁，线程安全"></a>4.双重校验锁，线程安全</h5><p>描述：采用双锁机制，在保证线程安全的情况下有较高性能。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SingleObject</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> SingleObject object;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">SingleObject</span><span class="params">()</span></span>&#123;&#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> SingleObject <span class="title">getObject</span><span class="params">()</span></span>&#123; </span><br><span class="line">        <span class="keyword">if</span>(object==<span class="keyword">null</span>)&#123;</span><br><span class="line">            synchronize(SingleObject.class)&#123;</span><br><span class="line">                <span class="keyword">if</span>(object==<span class="keyword">null</span>)</span><br><span class="line">                &#123;</span><br><span class="line">                    object=<span class="keyword">new</span> SingleObject(); <span class="comment">//存在隐患</span></span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> object;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在网上查阅发现双重锁还是有隐患，在实例化对象那一行，发生的事情有：</p>
+<p>A: 分配内存空间</p>
+<p>B：初始化对象</p>
+<p>C：将对象指向刚分配的空间</p>
+<p>但有些编译器可能因为性能原因，BC<strong>重排序</strong>，会将BC调换顺序，顺序成了ACB。</p>
+<p>假设有两个线程A，B：</p>
+<table>
+<thead>
+<tr>
+<th>时间</th>
+<th>Thread A</th>
+<th>Thread B</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>object=null</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>获取锁</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>检查到object=null</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>为object分配内存</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>将object指向内存空间</td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td></td>
+<td>检查到object！=null</td>
+</tr>
+<tr>
+<td>7</td>
+<td></td>
+<td>访问object（此时还未完成初始化）</td>
+</tr>
+<tr>
+<td>8</td>
+<td>初始化object</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>修改：在object前加上<strong>volatile</strong>关键字，<strong>重排序</strong>被禁止，所有的写操作都发生在读操作之后。</p>
+<p><strong>volatile作用</strong>：确保本条指令不会因为编译器的优化而省略。表示这个变量可能会意想不到的改变，这样，编译器就不会去假设这个变量的值了。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SingleObject</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">volatile</span> SingleObject object;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">SingleObject</span><span class="params">()</span></span>&#123;&#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> SingleObject <span class="title">getObject</span><span class="params">()</span></span>&#123; </span><br><span class="line">        <span class="keyword">if</span>(object==<span class="keyword">null</span>)&#123;</span><br><span class="line">            synchronize(SingleObject.class)&#123;</span><br><span class="line">                <span class="keyword">if</span>(object==<span class="keyword">null</span>)</span><br><span class="line">                &#123;</span><br><span class="line">                    object=<span class="keyword">new</span> SingleObject(); </span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> object;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 
       
     </div>
@@ -468,7 +537,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/hexo/" rel="tag"># hexo</a>
+            <a href="/tags/设计模式/" rel="tag"># 设计模式</a>
+          
+            <a href="/tags/单例模式/" rel="tag"># 单例模式</a>
           
         </div>
       
@@ -481,8 +552,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/09/17/github-hexo搭建个人博客/" rel="next" title="github+hexo搭建个人博客">
-                <i class="fa fa-chevron-left"></i> github+hexo搭建个人博客
+              <a href="/2019/12/16/沁沁/" rel="next" title="沁沁">
+                <i class="fa fa-chevron-left"></i> 沁沁
               </a>
             
           </div>
@@ -491,8 +562,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/09/20/MachineLearning入门笔记1（吴恩达）/" rel="prev" title="Machine Learning入门笔记1（吴恩达）">
-                Machine Learning入门笔记1（吴恩达） <i class="fa fa-chevron-right"></i>
+              <a href="/2020/07/04/Java面试常见问题汇总/" rel="prev" title="Java面试常见问题汇总">
+                Java面试常见问题汇总 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -550,8 +621,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -642,6 +722,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#单例模式"><span class="nav-text">单例模式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#实现方法："><span class="nav-text">实现方法：</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-懒汉式，线程不安全。"><span class="nav-text">1.懒汉式，线程不安全。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-懒汉式，线程安全。"><span class="nav-text">2.懒汉式，线程安全。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-饿汉式，线程安全。"><span class="nav-text">3.饿汉式，线程安全。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-双重校验锁，线程安全"><span class="nav-text">4.双重校验锁，线程安全</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
