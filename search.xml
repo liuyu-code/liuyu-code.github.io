@@ -1,13 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[MVC模式]]></title>
+    <url>%2F2020%2F07%2F05%2F%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-MVC%E6%A8%A1%E5%BC%8F%2F</url>
+    <content type="text"><![CDATA[MVC模式1.MVC模式即model-view-controller(模型-视图-控制器)模式，常见的比如Android开发中的，view即Android的界面，model即界面上要展示的数据，而controller就是控制数据，数据变化时实时更新view展示的数据。 Model（模型）：代表了一个存取的数据的对象。 View（视图）：视图代表了模型包含的数据的可视化。 Controller（控制器）：控制器作用于模型和视图之上，可以做到在数据变化时实时更新视图。它让model和view分开。 2.实现重点：首先会有一个view类和model类，然后会有一个Controller类，里面包含了一个model对象和view对象，通过Controller实现了view和model的绑定。具体代码： model： 12345678910111213141516public class Student &#123; private String rollNo; private String name; public String getRollNo() &#123; return rollNo; &#125; public void setRollNo(String rollNo) &#123; this.rollNo = rollNo; &#125; public String getName() &#123; return name; &#125; public void setName(String name) &#123; this.name = name; &#125;&#125; view： 1234567public class StudentView &#123; public void printStudentDetails(String studentName, String studentRollNo)&#123; System.out.println("Student: "); System.out.println("Name: " + studentName); System.out.println("Roll No: " + studentRollNo); &#125;&#125; Controller： 1234567891011121314151617181920212223242526272829public class StudentController &#123; private Student model; private StudentView view; public StudentController(Student model, StudentView view)&#123; this.model = model; this.view = view; &#125; public void setStudentName(String name)&#123; model.setName(name); &#125; public String getStudentName()&#123; return model.getName(); &#125; public void setStudentRollNo(String rollNo)&#123; model.setRollNo(rollNo); &#125; public String getStudentRollNo()&#123; return model.getRollNo(); &#125; public void updateView()&#123; view.printStudentDetails(model.getName(), model.getRollNo()); &#125; &#125; Main： 1234567891011121314151617181920212223242526public class MVCPatternDemo &#123; public static void main(String[] args) &#123; //从数据库获取学生记录 Student model = retrieveStudentFromDatabase(); //创建一个视图：把学生详细信息输出到控制台 StudentView view = new StudentView(); StudentController controller = new StudentController(model, view); controller.updateView(); //更新模型数据 controller.setStudentName("John"); controller.updateView(); &#125; private static Student retrieveStudentFromDatabase()&#123; Student student = new Student(); student.setName("Robert"); student.setRollNo("10"); return student; &#125;&#125; 1234567输出：Student: Name: RobertRoll No: 10Student: Name: JohnRoll No: 10]]></content>
+      <categories>
+        <category>设计模式</category>
+      </categories>
+      <tags>
+        <tag>设计模式</tag>
+        <tag>MVC模式</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[适配器模式]]></title>
+    <url>%2F2020%2F07%2F05%2F%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F%2F</url>
+    <content type="text"><![CDATA[适配器模式1.适配器模式（Adapter Pattern）属于结构型模式，它结合了两个独立接口的功能。是作为两个不兼容接口的桥梁。比如读卡器可以看做是一个适配器，连接电脑和SD卡。适配器可以将一个类的接口转换成客户希望的另外一个接口。适配器模式使得原本由于接口不兼容而不能一起工作的那些类可以一起工作。 2.实现方式：通过继承或者依赖，适配器继承或者依赖已有的对象，实现想要的目标接口。 3.应用场景：比如Java中的jdbc。 4.注意：适配器模式在设计的时候一般不采用，而是用于解决已经部署的项目的问题。过多的使用适配器模式会让系统很凌乱，比如明明调用的是A接口，内部却被适配成了B接口的实现。]]></content>
+      <categories>
+        <category>设计模式</category>
+      </categories>
+      <tags>
+        <tag>设计模式 ， 适配器模式</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[C++面经汇总]]></title>
+    <url>%2F2020%2F07%2F05%2FC-%E9%9D%A2%E7%BB%8F%E6%B1%87%E6%80%BB%2F</url>
+    <content type="text"><![CDATA[C++面经汇总1.手撕算法：求二叉树两节点的最近祖先。 有一个二叉树，节点只包含左右子节点的指针 struct Node { Node* left; Node* right; } 给定两个节点A和B，找出他们的公共祖父结点。 12345678910111213141516171819/* * 二叉树中求两结点的最近祖先(递归版) * */ public static Node findBtreeLca(Node root,int x,int y)&#123; if(root==null) return null; //左右搜索，两边都有返回根节点 if(root.element==x||root.element==y) return root; Node left=findBtreeLca(root.leftChild, x, y); Node right=findBtreeLca(root.rightChild, x, y); //如果在左边没有找到就一定在右边，继续递归 if(left==null) return right; else if(right==null) return left; return root; &#125; 2.cpp文件变成exe文件经历了哪些阶段？图解： 过程如下： （一）预处理阶段。首先我们会对我们编辑得到的源代码（即扩展名为.c/.cpp文件）通过预处理器进行预处理，这一部分是由我们的编译器帮我们完成的。预处理器做的事情就是将原始源文件中的所有预处理器指令替换为暗示指令的实际库代码。那么什么是预处理指令呢？实际上这些是我们在代码很常见的，如#include和#define指令。之后，生成的文件基本上被取代并获得扩展名为.i文件。 （二）编译器编译阶段。接下来是编译器的处理阶段，这个阶段是把高级语言翻译成低级语言的过程，也负责检查源代码的语法/语法。若发现无误，则会将文件转换为扩展名为.s的文件，即我们所知的汇编代码。 （三）目标文件转换阶段。得到汇编文件之后，要对其进行转换，即该过程是将汇编级语言转换为机器级语言（一般为二进制格式），此时生成的文件就是我们的目标文件，扩展名为.o或.obj。 （四）链接阶段。C++语言支持分离式编译（这里指的编译是指上面（一）至（三）阶段）机制的，该机制允许将程序分割为若干个文件，每个文件可独立编译。那么多个已编译的文件如何合并呢？答案就是在此阶段。该阶段通过链接器将一个或多个目标文件合并到一个可执行文件，即将扩展名为.obj / .o文件转换为扩展名为.exe文件。 注：我们平常所说的“编译”是一个整体，即包括预处理，编译和汇编三个阶段。它在这些步骤中基本上将高级语言转换为机器级语言，并生成单个二进制对象文件。若编译（但不链接）三个单独的文件，则将创建三个作为输出的目标文件。 3.说说C++的智能指针。参考博客：https://blog.csdn.net/k346k346/article/details/81478223 4.谈谈阻塞与非阻塞、同步与异步的理解。 5.进行一次IO操作大致所需要的流程 6.进程和线程之间的区别。多进程和多线程各自使用情况，进程和线程之间的通信方式。 7.TCP四次挥手过程以及所处状态，为什么还要有time_wait。 8.常见的排序算法有哪些？哪些是稳定的，哪些不稳定。 9.网络五层模型，每一层有哪些协议，以及每一层的作用。 10.手撕代码：有序数组旋转后找最小值所在位置、给出一个有环的链表输出环的长度； 11.手撕代码：给出一个链表，每两个节点旋转一次，最后返回旋转后的链表； 12.手撕代码：给定一个存在重复元素的有序数组，以及一个目标数字，利用二分查找法找到该数字首次出现的位置； C++继承和组合？你在实际项目中是怎么使用的？什么情况下使用继承？什么情况下使用组合？ C++构造函数可以是虚函数吗？为什么？ C++析构函数可以是虚函数吗？为什么要将析构函数设置为虚函数？ C++如何实现多态？虚表指针是什么时候被初始化的？实例化一个对象需要那几个阶段？（三个） C++偏特化？ 重载、重写、覆盖？ static关键字的作用？（要全面）怎么实现的？ inline和宏定义的区别？inline是如何实现的？宏定义是如何实现的？ 指针和引用的区别？怎么实现的？ malloc和mmap的底层实现？malloc分配的是什么？（底层详细回答） Linux进程地址空间布局？（这里又问道虚拟内存和分页、页表这些东西） tcp的握手挥手过程？（详细）tcp为什么要连接？tcp建立连接这里你是怎么理解的？ 半连接队列？全连接队列？ tcp流量控制和拥塞控制？ time_wait状态？为什么是2msl？ 有很多close_wait怎么解决？ 阻塞和非阻塞？同步和异步？ 五种IO模型？ select和epoll有什么区别？epoll的LT和ET模式？ udp为什么是不可靠的？bind和connect对于udp的作用是什么？ NAT是什么？底层实现原理？ 斐波那契数列的非递归写法？（写出代码） 共享桌面用你熟悉的任意画图工具画项目架构图？（我用的ProcessOn） 聊项目？ 总共用时两个小时吧，问了很多，有些已经想不起来了。]]></content>
+      <categories>
+        <category>面经</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+        <tag>面经</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Java面试常见问题汇总]]></title>
     <url>%2F2020%2F07%2F04%2FJava%E9%9D%A2%E8%AF%95%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB%2F</url>
     <content type="text"></content>
   </entry>
   <entry>
     <title><![CDATA[单例模式]]></title>
-    <url>%2F2020%2F07%2F03%2FdesignPatterns-1%2F</url>
+    <url>%2F2020%2F07%2F03%2F%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F%2F</url>
     <content type="text"><![CDATA[单例模式1.单例模式属于创建型模式。确保一个类只有单个对象被创建，这个类提供了一种访问其唯一对象的方式，可以直接访问，不需要实例化该类的对象。 注意： 1.单例类只能有一个实例； 2.单例类必须自己创建自己唯一的实例； 3.单例类必须给所有其他对象提供这一个实例。 2.使用条件：当想控制实例的数目的时候。比如一个班只有一个班主任，再比如Windows操作文件的时候必须是唯一实例。 3.优点：在内存只有一个实例，避免了内存的开销（频繁创建和销毁实例） 4.缺点：没有借口，不可继承。 5.关键思想：构造函数私有。 实现方法：1.懒汉式，线程不安全。描述：不支持多线程。 123456789public class SingleObject&#123; private static SingleObject object; private SingleObject()&#123;&#125; public static SingleObject getObject()&#123; if(object==null) object=new SingleObject(); return object; &#125;&#125; 2.懒汉式，线程安全。描述：采用synchronize加锁保证单例，支持多线程。加锁影响效率 123456789public class SingleObject&#123; private static SingleObject object; private SingleObject()&#123;&#125; public static synchronize SingleObject getObject()&#123; //采用synchronize if(object==null) object=new SingleObject(); return object; &#125;&#125; 3.饿汉式，线程安全。描述：不用加锁，但类加载时就初始化，会浪费内存。 1234567public class SingleObject&#123; private static SingleObject object=new SingleObject();//和懒汉式区别 private SingleObject()&#123;&#125; public static SingleObject getObject()&#123; return object; &#125;&#125; 4.双重校验锁，线程安全描述：采用双锁机制，在保证线程安全的情况下有较高性能。 123456789101112131415public class SingleObject&#123; private static SingleObject object; private SingleObject()&#123;&#125; public static SingleObject getObject()&#123; if(object==null)&#123; synchronize(SingleObject.class)&#123; if(object==null) &#123; object=new SingleObject(); //存在隐患 &#125; &#125; &#125; return object; &#125;&#125; 在网上查阅发现双重锁还是有隐患，在实例化对象那一行，发生的事情有： A: 分配内存空间 B：初始化对象 C：将对象指向刚分配的空间 但有些编译器可能因为性能原因，BC重排序，会将BC调换顺序，顺序成了ACB。 假设有两个线程A，B： 时间 Thread A Thread B 1 object=null 2 获取锁 3 检查到object=null 4 为object分配内存 5 将object指向内存空间 6 检查到object！=null 7 访问object（此时还未完成初始化） 8 初始化object 修改：在object前加上volatile关键字，重排序被禁止，所有的写操作都发生在读操作之后。 volatile作用：确保本条指令不会因为编译器的优化而省略。表示这个变量可能会意想不到的改变，这样，编译器就不会去假设这个变量的值了。 123456789101112131415public class SingleObject&#123; private static volatile SingleObject object; private SingleObject()&#123;&#125; public static SingleObject getObject()&#123; if(object==null)&#123; synchronize(SingleObject.class)&#123; if(object==null) &#123; object=new SingleObject(); &#125; &#125; &#125; return object; &#125;&#125;]]></content>
       <categories>
         <category>设计模式</category>
@@ -20,7 +55,7 @@
   <entry>
     <title><![CDATA[沁沁]]></title>
     <url>%2F2019%2F12%2F16%2F%E6%B2%81%E6%B2%81%2F</url>
-    <content type="text"><![CDATA[The world is full of traps, but you are the treasure!献给沁沁小姐姐！ 我要嫁的人，只有一个条件，要我心里喜欢。 小和尚没化到缘，又路过烧鸭店。 人间不值得！！！]]></content>
+    <content type="text"><![CDATA[The world is full of traps, but you are the treasure!献给李沁小姐姐！ 我要嫁的人，只有一个条件，要我心里喜欢。 小和尚没化到缘，又路过烧鸭店。 人间不值得！！！]]></content>
       <tags>
         <tag>李沁</tag>
       </tags>
