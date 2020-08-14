@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-07-10T08:47:40.812Z</updated>
+  <updated>2020-08-13T12:36:52.151Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,62 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>秋招进度</title>
+    <link href="http://yoursite.com/2020/08/10/%E7%A7%8B%E6%8B%9B%E8%BF%9B%E5%BA%A6/"/>
+    <id>http://yoursite.com/2020/08/10/秋招进度/</id>
+    <published>2020-08-10T06:30:08.000Z</published>
+    <updated>2020-08-13T12:36:52.151Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;1.字节跳动 飞书 杭州  客户端  提前批 一面挂&lt;/p&gt;
+&lt;p&gt;​        https建立连接的流程&lt;/p&gt;
+&lt;p&gt;​        手写单例模式&lt;/p&gt;
+&lt;p&gt;​        手写生产者消费者模型&lt;/p&gt;
+&lt;p&gt;​       
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>面试笔记</title>
+    <link href="http://yoursite.com/2020/08/07/%E9%9D%A2%E8%AF%95%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/2020/08/07/面试笔记/</id>
+    <published>2020-08-07T02:48:38.000Z</published>
+    <updated>2020-08-11T01:40:28.783Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;面试笔记&quot;&gt;&lt;a href=&quot;#面试笔记&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="面试" scheme="http://yoursite.com/categories/%E9%9D%A2%E8%AF%95/"/>
+    
+    
+      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
+    
+      <category term="面试" scheme="http://yoursite.com/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+  </entry>
   
   <entry>
     <title>数据结构与算法面经</title>
@@ -125,7 +181,7 @@
     <link href="http://yoursite.com/2020/07/03/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/"/>
     <id>http://yoursite.com/2020/07/03/设计模式-单例模式/</id>
     <published>2020-07-03T12:25:27.000Z</published>
-    <updated>2020-07-05T11:50:52.266Z</updated>
+    <updated>2020-08-09T13:05:43.313Z</updated>
     
     <summary type="html">
     

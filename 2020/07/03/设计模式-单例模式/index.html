@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="远方">
 <meta property="og:description" content="单例模式1.单例模式属于创建型模式。确保一个类只有单个对象被创建，这个类提供了一种访问其唯一对象的方式，可以直接访问，不需要实例化该类的对象。 注意：  1.单例类只能有一个实例； 2.单例类必须自己创建自己唯一的实例； 3.单例类必须给所有其他对象提供这一个实例。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-07-05T11:50:52.266Z">
+<meta property="og:updated_time" content="2020-08-09T13:05:43.313Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="单例模式">
 <meta name="twitter:description" content="单例模式1.单例模式属于创建型模式。确保一个类只有单个对象被创建，这个类提供了一种访问其唯一对象的方式，可以直接访问，不需要实例化该类的对象。 注意：  1.单例类只能有一个实例； 2.单例类必须自己创建自己唯一的实例； 3.单例类必须给所有其他对象提供这一个实例。">
@@ -449,8 +449,8 @@
 
 <p>2.使用条件：当想控制实例的数目的时候。比如一个班只有一个班主任，再比如Windows操作文件的时候必须是唯一实例。</p>
 <p>3.优点：在内存只有一个实例，避免了内存的开销（频繁创建和销毁实例）</p>
-<p>4.缺点：没有借口，不可继承。</p>
-<p>5.关键思想：构造函数私有。</p>
+<p>4.缺点：没有接口，不可继承。</p>
+<p>5.关键思想：<strong>构造函数私有。</strong></p>
 <h3 id="实现方法："><a href="#实现方法：" class="headerlink" title="实现方法："></a>实现方法：</h3><h5 id="1-懒汉式，线程不安全。"><a href="#1-懒汉式，线程不安全。" class="headerlink" title="1.懒汉式，线程不安全。"></a>1.懒汉式，线程不安全。</h5><p>描述：不支持多线程。</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SingleObject</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> SingleObject object;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">SingleObject</span><span class="params">()</span></span>&#123;&#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> SingleObject <span class="title">getObject</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(object==<span class="keyword">null</span>)</span><br><span class="line">            object=<span class="keyword">new</span> SingleObject();</span><br><span class="line">        <span class="keyword">return</span> object;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -650,7 +650,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -661,7 +661,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -672,7 +672,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-count">16</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -768,7 +768,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">8k</span>
+    <span title="Site words total count">8.8k</span>
   
 </div>
 
