@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="数据结构与算法面经1.Top K解决办法。 全局排序，O(n*lg(n))  局部排序(冒泡前k个)，只排序前k个,O(n*k);  堆排序，前k个也不用排序了。维护一个k个元素的小顶堆，进入新的元素不断与小顶堆的root比较，最终得到的就是未排序的前k个元素，O(n*lg(k))  随机选择+partition.通过随机选择，找到arr[1, n]中第k大的数，再进行一次partition，就能">
+<meta name="description" content="数据结构与算法面经1.Top K解决办法。 全局排序，O(n*lg(n)) 局部排序(冒泡前k个)，只排序前k个,O(n*k);">
 <meta name="keywords" content="数据结构,算法,面经">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数据结构与算法面经">
 <meta property="og:url" content="http://yoursite.com/2020/07/10/数据结构与算法面经/index.html">
 <meta property="og:site_name" content="远方">
-<meta property="og:description" content="数据结构与算法面经1.Top K解决办法。 全局排序，O(n*lg(n))  局部排序(冒泡前k个)，只排序前k个,O(n*k);  堆排序，前k个也不用排序了。维护一个k个元素的小顶堆，进入新的元素不断与小顶堆的root比较，最终得到的就是未排序的前k个元素，O(n*lg(k))  随机选择+partition.通过随机选择，找到arr[1, n]中第k大的数，再进行一次partition，就能">
+<meta property="og:description" content="数据结构与算法面经1.Top K解决办法。 全局排序，O(n*lg(n)) 局部排序(冒泡前k个)，只排序前k个,O(n*k);">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-07-10T08:47:40.812Z">
+<meta property="og:updated_time" content="2020-08-22T10:51:17.515Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数据结构与算法面经">
-<meta name="twitter:description" content="数据结构与算法面经1.Top K解决办法。 全局排序，O(n*lg(n))  局部排序(冒泡前k个)，只排序前k个,O(n*k);  堆排序，前k个也不用排序了。维护一个k个元素的小顶堆，进入新的元素不断与小顶堆的root比较，最终得到的就是未排序的前k个元素，O(n*lg(k))  随机选择+partition.通过随机选择，找到arr[1, n]中第k大的数，再进行一次partition，就能">
+<meta name="twitter:description" content="数据结构与算法面经1.Top K解决办法。 全局排序，O(n*lg(n)) 局部排序(冒泡前k个)，只排序前k个,O(n*k);">
 
 
 
@@ -439,10 +439,12 @@
 
       
         <h1 id="数据结构与算法面经"><a href="#数据结构与算法面经" class="headerlink" title="数据结构与算法面经"></a>数据结构与算法面经</h1><h4 id="1-Top-K解决办法。"><a href="#1-Top-K解决办法。" class="headerlink" title="1.Top K解决办法。"></a>1.Top K解决办法。</h4><ul>
-<li><p>全局排序，O(n*lg(n))</p>
-</li>
-<li><p>局部排序(冒泡前k个)，只排序前k个,O(n*k);</p>
-</li>
+<li>全局排序，O(n*lg(n))</li>
+<li>局部排序(冒泡前k个)，只排序前k个,O(n*k);</li>
+</ul>
+<a id="more"></a>
+
+<ul>
 <li><p>堆排序，前k个也不用排序了。维护一个k个元素的小顶堆，进入新的元素不断与小顶堆的root比较，最终得到的就是未排序的前k个元素，O(n*lg(k))</p>
 </li>
 <li><p>随机选择+partition.通过随机选择，找到arr[1, n]中第k大的数，再进行一次partition，就能得到TopK的结果。</p>

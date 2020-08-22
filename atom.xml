@@ -44,21 +44,17 @@
     <link href="http://yoursite.com/2020/08/10/%E7%A7%8B%E6%8B%9B%E8%BF%9B%E5%BA%A6/"/>
     <id>http://yoursite.com/2020/08/10/秋招进度/</id>
     <published>2020-08-10T06:30:08.000Z</published>
-    <updated>2020-08-21T07:25:55.777Z</updated>
+    <updated>2020-08-22T10:51:34.753Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;1.字节跳动 飞书 杭州  客户端  提前批 一面挂&lt;/p&gt;
+      &lt;p&gt;1.字节跳动 飞书 杭州  客户端  提前批 一面挂&lt;/p&gt;
 &lt;p&gt;​        https建立连接的流程&lt;/p&gt;
 &lt;p&gt;​        手写单例模式&lt;/p&gt;
 &lt;p&gt;​        手写生产者消费者模型&lt;/p&gt;
-&lt;p&gt;​       
-        
-      
+&lt;p&gt;​        两个栈实现一个队列&lt;/p&gt;
+&lt;p&gt;​        线程池&lt;/p&gt;
+&lt;p&gt;​        观察者模式&lt;/p&gt;
     
     </summary>
     
@@ -71,17 +67,16 @@
     <link href="http://yoursite.com/2020/08/07/%E9%9D%A2%E8%AF%95%E7%AC%94%E8%AE%B0/"/>
     <id>http://yoursite.com/2020/08/07/面试笔记/</id>
     <published>2020-08-07T02:48:38.000Z</published>
-    <updated>2020-08-22T10:44:13.575Z</updated>
+    <updated>2020-08-22T10:51:22.939Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h1 id=&quot;面试笔记&quot;&gt;&lt;a href=&quot;#面试笔记&quot; class=&quot;headerlink&quot; title=&quot;面试笔记&quot;&gt;&lt;/a&gt;面试笔记&lt;/h1&gt;&lt;h2 id=&quot;一、C&quot;&gt;&lt;a href=&quot;#一、C&quot; class=&quot;headerlink&quot;
-        
-      
+      &lt;h1 id=&quot;面试笔记&quot;&gt;&lt;a href=&quot;#面试笔记&quot; class=&quot;headerlink&quot; title=&quot;面试笔记&quot;&gt;&lt;/a&gt;面试笔记&lt;/h1&gt;&lt;h2 id=&quot;一、C&quot;&gt;&lt;a href=&quot;#一、C&quot; class=&quot;headerlink&quot; title=&quot;一、C++&quot;&gt;&lt;/a&gt;一、C++&lt;/h2&gt;&lt;h3 id=&quot;1-基础知识&quot;&gt;&lt;a href=&quot;#1-基础知识&quot; class=&quot;headerlink&quot; title=&quot;1.基础知识&quot;&gt;&lt;/a&gt;1.基础知识&lt;/h3&gt;&lt;h4 id=&quot;1-1-关键字&quot;&gt;&lt;a href=&quot;#1-1-关键字&quot; class=&quot;headerlink&quot; title=&quot;1.1 关键字&quot;&gt;&lt;/a&gt;1.1 关键字&lt;/h4&gt;&lt;h5 id=&quot;1-1-1-static&quot;&gt;&lt;a href=&quot;#1-1-1-static&quot; class=&quot;headerlink&quot; title=&quot;1.1.1 static&quot;&gt;&lt;/a&gt;1.1.1 static&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;隐藏：在编译多个文件的时候，指定函数变量的作用于为文件内部，未加static具有全局可见性;&lt;/li&gt;
+&lt;li&gt;保持变量的内容持久;&lt;/li&gt;
+&lt;li&gt;默认初始化为0;&lt;/li&gt;
+&lt;li&gt;C++的类成员变量会声明为static，不是对象的成员。&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
@@ -100,17 +95,14 @@
     <link href="http://yoursite.com/2020/07/10/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E9%9D%A2%E7%BB%8F/"/>
     <id>http://yoursite.com/2020/07/10/数据结构与算法面经/</id>
     <published>2020-07-10T07:04:30.000Z</published>
-    <updated>2020-07-10T08:47:40.812Z</updated>
+    <updated>2020-08-22T10:51:17.515Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h1 id=&quot;数据结构与算法面经&quot;&gt;&lt;a href=&quot;#数据结构与算法面经&quot; class=&quot;headerlink&quot; title=&quot;数据结构与算法面经&quot;&gt;&lt;/a&gt;数据结构与算法面经&lt;/h1&gt;&lt;h4 id=&quot;1-Top-K解决办法。&quot;&gt;&lt;a
-        
-      
+      &lt;h1 id=&quot;数据结构与算法面经&quot;&gt;&lt;a href=&quot;#数据结构与算法面经&quot; class=&quot;headerlink&quot; title=&quot;数据结构与算法面经&quot;&gt;&lt;/a&gt;数据结构与算法面经&lt;/h1&gt;&lt;h4 id=&quot;1-Top-K解决办法。&quot;&gt;&lt;a href=&quot;#1-Top-K解决办法。&quot; class=&quot;headerlink&quot; title=&quot;1.Top K解决办法。&quot;&gt;&lt;/a&gt;1.Top K解决办法。&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;全局排序，O(n*lg(n))&lt;/li&gt;
+&lt;li&gt;局部排序(冒泡前k个)，只排序前k个,O(n*k);&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
